@@ -1,0 +1,25 @@
+{
+  "name": "heroku_node_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephverbeck/heroku_node_backend.git"
+  },
+  "author": "Joseph Verbeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephverbeck/heroku_node_backend/issues"
+  },
+  "homepage": "https://github.com/josephverbeck/heroku_node_backend#readme",
+  "engines": {
+    "node": "7.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
