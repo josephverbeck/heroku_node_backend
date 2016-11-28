@@ -1,18 +1,6 @@
-var express = require('express');
-var app = express();
-var database = require('.lib/config/database');
 
-require(‘./lib/public/routes.js’)(app);
+var app = require('_/app');
+var cfg = require('_/config');
 
-app.set('port', (process.env.PORT || 5000));
-
-app.use(express.static(__dirname + '/public'));
-
-app.use(function (error, request, response, next) {
- console.error(error.stack);
- response.status(400).send(error.message);
-});
-
-app.listen(app.get('port'), function(){
-	console.log('Node is running on port', app.get('port'));
-});
+app.listen(cfg.port);
+console.log('app listening on port', cfg.port);
