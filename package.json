@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "preinstall": "node bin/preinstall.js",
     "start": "node app.js"
   },
   "repository": {
